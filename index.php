@@ -21,5 +21,14 @@
             <button type="submit">Register</button>
         </form>
     </main>
+
+<!--    --><?php
+//    include 'database.php';
+//
+//    if _$_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username'])
+//
+//    $conn = new mysqli($servername, $username, $password, $dbname);
+//    $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES");
+//    ?>
 </body>
 </html>
