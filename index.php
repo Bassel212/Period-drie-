@@ -15,20 +15,11 @@
     <main>
         <h2>Registreren</h2>
         <form method="POST">
-            <input type="text" name="username" placeholder="username" required>
-            <input type="email" name="email" placeholder="e-mail" required>
-            <input type="password" name="password" placeholder="password" required>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Register</button>
         </form>
     </main>
-
-<!--    --><?php
-//    include 'database.php';
-//
-//    if _$_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username'])
-//
-//    $conn = new mysqli($servername, $username, $password, $dbname);
-//    $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES");
-//    ?>
 </body>
 </html>
