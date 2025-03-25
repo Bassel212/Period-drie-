@@ -11,10 +11,9 @@
         <a href="/index.php">Home</a>
         <a href="/register.php">Login</a>
     </nav>
-
     <main>
         <h2>Registreren</h2>
-        <form method="POST">
+        <form action="register.php" method="POST">
             <input type="text" name="username" placeholder="Username" required>
             <input type="email" name="email" placeholder="E-mail" required>
             <input type="password" name="password" placeholder="Password" required>
