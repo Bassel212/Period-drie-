@@ -1,4 +1,5 @@
-<?php include_once('./partials/header.php'); ?>
+<?php global $conn;
+include_once('./header.php'); ?>
 
 <?php
 
@@ -90,4 +91,4 @@ if (isset($_REQUEST['btnSignUp'])) {
 
 
 
-<?php include_once('./partials/footer.php'); ?>
+<?php include_once('./footer.php'); ?>

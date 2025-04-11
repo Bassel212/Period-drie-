@@ -1,5 +1,132 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Profiel sectie */
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
 }
+
+.profile-info {
+    margin-left: 1.5rem;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00d1b2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Statistieken */
+.stats-container {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    background: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #00d1b2;
+    margin-bottom: 0.25rem;
+}
+
+/* Suggesties */
+.suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin: 2rem 0;
+}
+
+.suggestion-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.suggestion-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-card .button {
+    transition: all 0.2s ease;
+}
+
+/* Berichten */
+.message-box {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #00d1b2;
+    transition: transform 0.2s ease;
+}
+
+.message-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message-time {
+    color: #7a7a7a;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+/* Formulier */
+.message-form {
+    margin-top: 2.5rem;
+}
+
+.message-form .textarea {
+    min-height: 140px;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: border-color 0.2s ease;
+}
+
+.message-form .textarea:focus {
+    border-color: #00d1b2;
+    box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
+}
+
+/* Animaties */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.suggestion-card {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.suggestion-card:nth-child(1) { animation-delay: 0.1s; }
+.suggestion-card:nth-child(2) { animation-delay: 0.2s; }
+.suggestion-card:nth-child(3) { animation-delay: 0.3s; }
+.suggestion-card:nth-child(4) { animation-delay: 0.4s; }
+.suggestion-card:nth-child(5) { animation-delay: 0.5s; }
